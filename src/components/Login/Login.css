@@ -1,0 +1,27 @@
+.form {
+  margin: auto;
+  max-width: 500px;
+  width: 80%;
+  
+}
+
+.form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form input {
+  background-color: #fff;
+  border: none;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 16px;
+  margin-top: 4px;
+  line-height: 2;
+  padding: 0 8px;
+  width: 100%;
+}
+
+.form .btn {
+  width: 100%;
+}

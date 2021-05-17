@@ -1,0 +1,16 @@
+.App-logo {
+    margin: 10px auto;
+    padding: 20px 0;
+    width: 144px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .App-logo:hover {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  
+  .App-logo img {
+    object-fit: cover;
+    width: 100%;
+  }

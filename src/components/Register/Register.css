@@ -1,0 +1,87 @@
+.form {
+  margin: auto;
+  max-width: 500px;
+  width: 80%;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form input {
+  background-color: #fff;
+  border: none;
+  display: block;
+  font-size: 16px;
+  margin-bottom: -5px;
+  margin-top: 4px;
+  line-height: 2;
+  padding: 0 8px;
+  width: 100%;
+  outline: none;
+  transition: border 0.2s ease;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid var(--brand-color_3);
+}
+
+.form input.error {
+  border-radius: 10px 10px 10px 0;
+  border: 2px solid red;
+}
+
+.form .btn {
+  width: 100%;
+}
+
+.form-error {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  background-color: red;
+  font-size: 15px;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  animation-name: formErrorAnimated;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+@keyframes formErrorAnimated {
+  0% {
+    color: transparent;
+    transform: scaleY(0);
+  }
+  100% {
+    color: white;
+    transform: scaleY(1);
+  }
+}
+
+.form-error:after {
+  content: "";
+  position: absolute;
+
+  height: 10px;
+  width: 20px;
+  bottom: 0;
+}
+
+.form-error:after {
+  transform: translateX(100%);
+  top: 0px;
+  right: 0;
+
+  border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  -webkit-border-radius: 10px 0 0 0;
+
+  -webkit-box-shadow: -10px 0 0 0 #f00;
+  box-shadow: -10px 0 0 0 #f00;
+}
