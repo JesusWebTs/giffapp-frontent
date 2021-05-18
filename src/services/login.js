@@ -1,4 +1,4 @@
-const ENDPOINT = "http://localhost:8000/api";
+const ENDPOINT = "https://giffybackend.herokuapp.com/api";
 const IPENDPOINT = "https://api.ipify.org/?format=json";
 
 export async function loginService({ userName, password }) {

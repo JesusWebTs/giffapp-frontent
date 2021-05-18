@@ -1,4 +1,4 @@
-const ENDPOINT = "http://localhost:8000/api";
+const ENDPOINT = "https://giffybackend.herokuapp.com/api";
 
 export default function getFavs({ jwt }) {
   return fetch(`${ENDPOINT}/favs`, {

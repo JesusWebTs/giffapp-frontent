@@ -1,4 +1,4 @@
-const ENDPOINT = "http://localhost:8000/api";
+const ENDPOINT = "https://giffybackend.herokuapp.com/api";
 
 export default async function addFav({ id, jwt }) {
 
