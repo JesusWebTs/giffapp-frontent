@@ -3,12 +3,12 @@ const IPENDPOINT = "https://api.ipify.org/?format=json";
 
 export async function loginService({ userName, password }) {
   const deviceInfo = navigator.userAgent;
-  const userIpres = await fetch(IPENDPOINT);
+  /* const userIpres = await fetch(IPENDPOINT);
   const { ip } = await userIpres.json();
   const geolocationRes = await fetch(
     `https://ipgeolocation.abstractapi.com/v1/?api_key=e43f6af0cdc54c13aa1e4e48d1f805d8&ip_address=${ip}`
   );
-  const geolocation = await geolocationRes.json();
+  const geolocation = await geolocationRes.json(); */
   return fetch(`${ENDPOINT}/login`, {
     method: "POST",
     headers: {
@@ -18,7 +18,7 @@ export async function loginService({ userName, password }) {
       userName,
       password,
       deviceInfo,
-      geolocation,
+      geolocation: {},
     }),
   })
     .then((res) => {
